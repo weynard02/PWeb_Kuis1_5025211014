@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Berita</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  </head>
+  <body style="background-color: #afdfff;">
+    <nav class="navbar navbar-expand">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img src="images/logo.png" width="154" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#hot">Hot</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    News
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://www.youtube.com/c/kumparan">YouTube</a></li>
+                    <li><a class="dropdown-item" href="https://www.tiktok.com/@kumparan">TikTok</a></li>
+                </ul>
+                </li>
+            </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="row content">
+        <div class="col-8">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/jonathan.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Hot News</h5>
+                      <p>Jonathan Majors ditangkap karena penyerangan atas wanita</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <iframe width="992" height="558" src="https://www.youtube.com/embed/7G0ovtPqHnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fw-bold">YOASOBI</h5>
+                        <p class="fw-bold">baru saja merilis music video terbaru</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/ramadhan.jpg" class="d-block w-100" width="992" height="558">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="fw-bold">Trending</h5>
+                      <p class="fw-bold">Kisah Al-Neyadi, Astronot yang Jalani Ramadhan 2023 di Luar Angkasa</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="col-4 card-group" style="height: 1rem;">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Trending News</h5>
+                    <button class="btn btn-danger" onclick="description('desc-1')">Tekan untuk lebih lanjut</button>
+                    <div id="desc-1">
+                        <img src="images/kamenrider.jpeg" class="card-img-top" width="267" height="150">
+                        <p><h6>Shin Kamen Rider</h6> segera tayang pada 15 Maret 2026</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Indomie rasa baru</h5>
+                    <button class="btn btn-danger" onclick="description('desc-2')">Tekan untuk lebih lanjut</button>
+                    <div id="desc-2">
+                        <img src="images/indomie.jpeg" class="card-img-top">
+                        <p class="card-text">Indomie Hadirkan 3 Varian Rasa ala Kuliner Jepang, Baru Dijual Online</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <br>
+    <a name="hot">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="images/mandalorian.jpeg" class="card-img-top" height="200">
+            <div class="card-body">
+              <h5 class="card-title">The Mandalorian Season 3</h5>
+              <p class="card-text">Episode kali ini meraih rating 80%. The Mandalorian season 3 merupakan serial televisi live-action Star Wars dibintangi Pedro Pascal. Tayang di Disney Hotstar mulai 1 Maret 2023.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/gempa.jpeg" class="card-img-top" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Gempa Bumi di Surabaya</h5>
+              <p class="card-text">Gempa berkekuatan Magnitudo 4,1 di rasakan di Kota Surabaya pada pukul 15.18 WIB. Gempa berasal dari kedalaman 14 kilometer ini mengguncang pada skala II MMI, mulai dari Bangkalan, Surabaya sampai Juanda di Sidoarjo, dan Sumenep.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/yoasobi.jpg" class="card-img-top" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Lagu terbaru</h5>
+              <p class="card-text">YOASOBI baru saja merilis lagu terbaru mereka yaitu Seventeen yang merupakan opening anime</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Dengarkan sekarang
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">YOASOBI - Seventeen</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe class="youtube" width="420" height="315" src="https://www.youtube.com/embed/q-D2VzYC3lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/mwam.jpg" class="card-img-top" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Pengisi lagu Demon Slayer terungkap</h5>
+              <p class="card-text">Man With A Mission dan penyanyi Milet telah terungkap sebagai artis dibalik lagu tema untuk season ketiga 'Demon Slayer' yang akan datang.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <br>
+    <footer>
+        <p>Copyright © 2023 Alexander Weynard S. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
